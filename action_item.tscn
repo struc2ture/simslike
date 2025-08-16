@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cng3ko713g3vu"]
+
+[ext_resource type="Script" uid="uid://csmdc1o160enj" path="res://action_item.gd" id="1_0mpjk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nfk4m"]
+font_size = 32
+
+[node name="ActionItem" type="HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+alignment = 2
+script = ExtResource("1_0mpjk")
+
+[node name="ActionName" type="Label" parent="."]
+layout_mode = 2
+text = "Action"
+label_settings = SubResource("LabelSettings_nfk4m")
+
+[node name="CancelButton" type="Button" parent="."]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+text = "X"
